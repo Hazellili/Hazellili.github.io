@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hazellili.github.io</id>
     <title>天天都想吃美食</title>
-    <updated>2020-04-20T15:03:14.280Z</updated>
+    <updated>2020-04-20T15:11:59.341Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hazellili.github.io"/>
     <link rel="self" href="https://hazellili.github.io/atom.xml"/>
@@ -20,18 +20,18 @@
 <p>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。</p>
 <h2 id="数学">数学</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6532119"><label class="task-list-item-label" for="task-item-6532119"> 1、看网课</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2929508"><label class="task-list-item-label" for="task-item-2929508"> 2、刷练习题</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4549448"><label class="task-list-item-label" for="task-item-4549448"> 1、看网课</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4976899"><label class="task-list-item-label" for="task-item-4976899"> 2、刷练习题</label></li>
 </ul>
 <h2 id="英语">英语</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3692401"><label class="task-list-item-label" for="task-item-3692401"> 1、背单词</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3837053"><label class="task-list-item-label" for="task-item-3837053"> 2、阅读</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7064150"><label class="task-list-item-label" for="task-item-7064150"> 1、背单词</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5704652"><label class="task-list-item-label" for="task-item-5704652"> 2、阅读</label></li>
 </ul>
 <h2 id="作业实验任务">作业/实验任务</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6178446"><label class="task-list-item-label" for="task-item-6178446"> 1、完成前端界面（h5做好了，Android和小程序还没做好）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2956672"><label class="task-list-item-label" for="task-item-2956672"> 2、整理之前写的服务端程序</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8732888"><label class="task-list-item-label" for="task-item-8732888"> 1、完成前端界面（h5做好了，Android和小程序还没做好）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6273505"><label class="task-list-item-label" for="task-item-6273505"> 2、整理之前写的服务端程序</label></li>
 </ul>
 <h2 id="插入视频试一试">插入视频试一试：</h2>
 <p><amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>
