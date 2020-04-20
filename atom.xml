@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hazellili.github.io</id>
     <title>天天都想吃美食</title>
-    <updated>2020-04-20T06:26:38.390Z</updated>
+    <updated>2020-04-20T06:47:18.994Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hazellili.github.io"/>
     <link rel="self" href="https://hazellili.github.io/atom.xml"/>
@@ -16,9 +16,9 @@
         <link href="https://hazellili.github.io/post/0420-ji-hua/">
         </link>
         <updated>2020-04-20T02:23:51.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。
+        <content type="html"><![CDATA[<h1 id="今天的计划">今天的计划</h1>
+<pre><code>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。
 </code></pre>
-<h1 id="今天的计划">今天的计划</h1>
 <h2 id="数学">数学</h2>
 <ul>
 <li>1、看网课</li>
