@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hazellili.github.io</id>
     <title>天天都想吃美食</title>
-    <updated>2020-04-19T18:20:32.555Z</updated>
+    <updated>2020-04-20T03:12:56.304Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hazellili.github.io"/>
     <link rel="self" href="https://hazellili.github.io/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://hazellili.github.io/images/avatar.png</logo>
     <icon>https://hazellili.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 天天都想吃美食</rights>
+    <entry>
+        <title type="html"><![CDATA[0420计划]]></title>
+        <id>https://hazellili.github.io/post/0420-ji-hua/</id>
+        <link href="https://hazellili.github.io/post/0420-ji-hua/">
+        </link>
+        <updated>2020-04-20T02:23:51.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。
+</code></pre>
+<p>##今天的计划<br>
+#数学</p>
+<blockquote>
+<p>1、看网课<br>
+2、刷练习题<br>
+#英语<br>
+1、背单词<br>
+2、阅读<br>
+#作业/实验任务<br>
+1、完成前端界面（h5、Android、小程序）<br>
+2、整理之前写的服务端程序</p>
+</blockquote>
+<p>#插入视频试一试：<br>
+<amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>
+<p>#插入音频试一试：<br>
+<amp-audio src="http://music.163.com/song/media/outer/url?id=1401431546.mp3" artwork="http://p1.music.126.net/YVdUq-VX1TJW_8u3EKAs5g==/109951164545953099.jpg?param=300x300" title="三月不适合做决定" album="第一次做人" artist="太一" height="50" width="auto" controls> </amp-audio></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://hazellili.github.io/post/hello-gridea/</id>
