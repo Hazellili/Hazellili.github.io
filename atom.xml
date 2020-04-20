@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hazellili.github.io</id>
     <title>天天都想吃美食</title>
-    <updated>2020-04-20T07:10:58.150Z</updated>
+    <updated>2020-04-20T14:51:11.597Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hazellili.github.io"/>
     <link rel="self" href="https://hazellili.github.io/atom.xml"/>
@@ -17,22 +17,21 @@
         </link>
         <updated>2020-04-20T02:23:51.000Z</updated>
         <content type="html"><![CDATA[<h1 id="今天的计划">今天的计划</h1>
-<pre><code>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。
-</code></pre>
+<p><strong>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。</strong></p>
 <h2 id="数学">数学</h2>
-<ul>
-<li>1、看网课</li>
-<li>2、刷练习题</li>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9240959"><label class="task-list-item-label" for="task-item-9240959"> 1、看网课</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3844723"><label class="task-list-item-label" for="task-item-3844723"> 2、刷练习题</label></li>
 </ul>
 <h2 id="英语">英语</h2>
-<ul>
-<li>1、背单词</li>
-<li>2、阅读</li>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5838219"><label class="task-list-item-label" for="task-item-5838219"> 1、背单词</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5428206"><label class="task-list-item-label" for="task-item-5428206"> 2、阅读</label></li>
 </ul>
 <h2 id="作业实验任务">作业/实验任务</h2>
-<ul>
-<li>1、完成前端界面（h5、Android、小程序）</li>
-<li>2、整理之前写的服务端程序</li>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8319331"><label class="task-list-item-label" for="task-item-8319331"> 1、完成前端界面（h5、Android、小程序）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7295060"><label class="task-list-item-label" for="task-item-7295060"> 2、整理之前写的服务端程序</label></li>
 </ul>
 <h2 id="插入视频试一试">插入视频试一试：</h2>
 <p><amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>

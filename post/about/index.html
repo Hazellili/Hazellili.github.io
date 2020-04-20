@@ -8,7 +8,7 @@
 <meta name="description" content="这个菜鸡喜欢随便写点东西">
 <meta name="theme-color" content="#212529">
 <title>关于 | 天天都想吃美食</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1587365091553">
+<link rel="shortcut icon" href="/favicon.ico?v=1587394258325">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
 
@@ -219,7 +219,12 @@
 <ul>
 <li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
 <li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
+<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">🎬 兴趣爱好</a>
+<ul>
+<li><a href="#%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%89%E5%85%B3%E7%9A%84%E4%B8%80%E5%88%87">和计算机有关的一切</a></li>
+<li><a href="#%E9%9F%B3%E4%B9%90">音乐</a></li>
+</ul>
+</li>
 <li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
 </ul>
 </li>
@@ -507,7 +512,7 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>148<span class="pc-show">字数</span></span>
+      <span>161<span class="pc-show">字数</span></span>
     </span>
     
   </div>
@@ -520,13 +525,15 @@ window.addEventListener('load', function() {
 <p>本站用于博主随便发一些日常学习内容，有空也会传自己的作品链接上来。</p>
 <h2 id="博主是谁">👨‍💻 博主是谁</h2>
 <p>是个小菜鸡，慢慢学习中</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>#和计算机有关的一切<br>
-数字媒体技术<br>
+<h2 id="兴趣爱好">🎬 兴趣爱好</h2>
+<h3 id="和计算机有关的一切">和计算机有关的一切</h3>
+<p>数字媒体技术<br>
+网络安全<br>
 密码学<br>
 游戏策划/开发（个人偏好AVG、RPG）<br>
-#音乐<br>
-vocal/pop/country music<br>
+影像制作（微电影、MV等）</p>
+<h3 id="音乐">音乐</h3>
+<p>vocal/pop/country music<br>
 hip hop<br>
 华语比较喜欢周杰伦、邓紫棋、华晨宇的歌<br>
 欧美喜欢JustinBieber、TaylorSwift、Sia、Lauv……<br>
@@ -590,7 +597,7 @@ hip hop<br>
   </div>
   
     <div class="bg-img">
-      <img src="\media\images\custom-bgImg.JPG" />
+      <img src="/media/images/custom-bgImg.JPG" />
     </div>
   
   
@@ -623,7 +630,19 @@ hip hop<br>
       <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
       <input id="duType" value="douqilai" type="hidden">
       
-        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1398663352.mp3" type="hidden">
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1440620792.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1401431546.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1345976337.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1375468661.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="https://webfs.yun.kugou.com/202004202226/cd5a25d07b5e6db18a133e4aa7f104d0/G147/M03/17/03/M4cBAFwmWxGADJFkACuefr7AJ48998.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1412264550.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1410815174.mp3" type="hidden">
       
     </div>
   </div>
@@ -638,44 +657,6 @@ var apiKey = landlord.dataset.key;
 <script type="text/javascript" src="/media/live2d/histoire/js/live2d.js"></script>
 <script type="text/javascript" src="/media/live2d/histoire/js/message.js"></script>
   
-  
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <input hidden id="player_cover" value="\media\images\custom-cover.jpg" />
-  <div class="music-list">
-  
-    
-    <input hidden value="第一次做人,太一,http://music.163.com/song/media/outer/url?id=1398663352.mp3," />
-  
-  </div>
-  <script>
-  let musics = document.querySelector('.music-list').children;
-  let mediaMusic = [];
-  let cover = document.querySelector('#player_cover').value;
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    let splits = item.value.split(',');
-    mediaMusic.push({
-      name: splits[0],
-      artist: splits[1],
-      url: splits[2],
-      lrc: splits[3],
-      cover: cover
-    });
-  }
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  </script>
-
-
   
 </div>
 <script>

@@ -8,7 +8,7 @@
 <meta name="description" content="这个菜鸡喜欢随便写点东西">
 <meta name="theme-color" content="#212529">
 <title>天天都想吃美食</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1587365091553">
+<link rel="shortcut icon" href="/favicon.ico?v=1587394258325">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
 
@@ -272,7 +272,7 @@
   </div>
   
     <div class="bg-img">
-      <img src="\media\images\custom-bgImg.JPG" />
+      <img src="/media/images/custom-bgImg.JPG" />
     </div>
   
   
@@ -305,7 +305,19 @@
       <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
       <input id="duType" value="douqilai" type="hidden">
       
-        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1398663352.mp3" type="hidden">
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1440620792.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1401431546.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1345976337.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1375468661.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="https://webfs.yun.kugou.com/202004202226/cd5a25d07b5e6db18a133e4aa7f104d0/G147/M03/17/03/M4cBAFwmWxGADJFkACuefr7AJ48998.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1412264550.mp3" type="hidden">
+      
+        <input name="live2dBGM" value="http://music.163.com/song/media/outer/url?id=1410815174.mp3" type="hidden">
       
     </div>
   </div>
@@ -320,44 +332,6 @@ var apiKey = landlord.dataset.key;
 <script type="text/javascript" src="/media/live2d/histoire/js/live2d.js"></script>
 <script type="text/javascript" src="/media/live2d/histoire/js/message.js"></script>
   
-  
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <input hidden id="player_cover" value="\media\images\custom-cover.jpg" />
-  <div class="music-list">
-  
-    
-    <input hidden value="第一次做人,太一,http://music.163.com/song/media/outer/url?id=1398663352.mp3," />
-  
-  </div>
-  <script>
-  let musics = document.querySelector('.music-list').children;
-  let mediaMusic = [];
-  let cover = document.querySelector('#player_cover').value;
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    let splits = item.value.split(',');
-    mediaMusic.push({
-      name: splits[0],
-      artist: splits[1],
-      url: splits[2],
-      lrc: splits[3],
-      cover: cover
-    });
-  }
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  </script>
-
-
   
 </div>
 <script>
