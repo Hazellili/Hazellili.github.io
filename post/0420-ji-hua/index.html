@@ -8,7 +8,7 @@
 <meta name="description" content="这个菜鸡喜欢随便写点东西">
 <meta name="theme-color" content="#212529">
 <title>0420计划 | 天天都想吃美食</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1587362819866">
+<link rel="shortcut icon" href="/favicon.ico?v=1587363971588">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/pisces.css">
 
@@ -152,7 +152,8 @@
       <div class="sidebar-body pisces" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -209,6 +210,197 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E4%BB%8A%E5%A4%A9%E7%9A%84%E8%AE%A1%E5%88%92">今天的计划</a>
+<ul>
+<li><a href="#%E6%95%B0%E5%AD%A6">数学</a></li>
+<li><a href="#%E8%8B%B1%E8%AF%AD">英语</a></li>
+<li><a href="#%E4%BD%9C%E4%B8%9A%E5%AE%9E%E9%AA%8C%E4%BB%BB%E5%8A%A1">作业/实验任务</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E8%AF%95%E4%B8%80%E8%AF%95">插入视频试一试：</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91%E8%AF%95%E4%B8%80%E8%AF%95">插入音频试一试：</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+      lList.push(elem);
+    }
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+
+(function() {
+  // 处理不是从#一级标题开始目录
+  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+    let con = tocContent.children[0].children[0];
+    tocContent.innerHTML = con.innerHTML;
+  }
+  let markdownItTOC = document.querySelector('.markdownIt-TOC');
+  let innerHeight = window.innerHeight;
+  markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+  addTocNumber(tocContent, '');
+})();
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
           
         
       </div>
@@ -337,26 +529,26 @@
               <div class="post-body next-md-body" id="post_body">
                 <pre><code>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。
 </code></pre>
-<p>##今天的计划<br>
-#数学</p>
-<blockquote>
-<p>1、看网课<br>
-2、刷练习题</p>
-</blockquote>
-<p>#英语</p>
-<blockquote>
-<p>1、背单词<br>
-2、阅读</p>
-</blockquote>
-<p>#作业/实验任务</p>
-<blockquote>
-<p>1、完成前端界面（h5、Android、小程序）<br>
-2、整理之前写的服务端程序</p>
-</blockquote>
-<p>#插入视频试一试：<br>
-<amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>
-<p>#插入音频试一试：<br>
-<amp-audio src="http://music.163.com/song/media/outer/url?id=1401431546.mp3" artwork="http://p1.music.126.net/YVdUq-VX1TJW_8u3EKAs5g==/109951164545953099.jpg?param=300x300" title="三月不适合做决定" album="第一次做人" artist="太一" height="50" width="auto" controls> </amp-audio></p>
+<h1 id="今天的计划">今天的计划</h1>
+<h2 id="数学">数学</h2>
+<ul>
+<li>1、看网课</li>
+<li>2、刷练习题</li>
+</ul>
+<h2 id="英语">英语</h2>
+<ul>
+<li>1、背单词</li>
+<li>2、阅读</li>
+</ul>
+<h2 id="作业实验任务">作业/实验任务</h2>
+<ul>
+<li>1、完成前端界面（h5、Android、小程序）</li>
+<li>2、整理之前写的服务端程序</li>
+</ul>
+<h2 id="插入视频试一试">插入视频试一试：</h2>
+<p><amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>
+<h2 id="插入音频试一试">插入音频试一试：</h2>
+<p><amp-audio src="http://music.163.com/song/media/outer/url?id=1401431546.mp3" artwork="http://p1.music.126.net/YVdUq-VX1TJW_8u3EKAs5g==/109951164545953099.jpg?param=300x300" title="三月不适合做决定" album="第一次做人" artist="太一" height="50" width="auto" controls> </amp-audio></p>
 
               </div>
               <div class="post-footer">
@@ -405,7 +597,7 @@
       Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
     </div>
     <div class="poweredby">
-      
+      2020@<a href src="https://github.com/Hazellili/">Hazellili</a>
     </div>
   </footer>
   
