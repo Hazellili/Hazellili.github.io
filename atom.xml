@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hazellili.github.io</id>
     <title>天天都想吃美食</title>
-    <updated>2020-04-20T15:11:59.341Z</updated>
+    <updated>2020-04-25T08:16:34.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hazellili.github.io"/>
     <link rel="self" href="https://hazellili.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://hazellili.github.io/images/avatar.png</logo>
     <icon>https://hazellili.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 天天都想吃美食</rights>
+    <entry>
+        <title type="html"><![CDATA[0421计划]]></title>
+        <id>https://hazellili.github.io/post/0421-ji-hua/</id>
+        <link href="https://hazellili.github.io/post/0421-ji-hua/">
+        </link>
+        <updated>2020-04-21T01:35:43.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="今日计划">今日计划</h1>
+<figure data-type="image" tabindex="1"><img src="https://hazellili.github.io/post-images/1587563979529.JPG" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[0420计划]]></title>
         <id>https://hazellili.github.io/post/0420-ji-hua/</id>
@@ -20,18 +30,18 @@
 <p>感觉现在在用的计划表、日程记录、任务打卡的东西太多了，每个地方都重新打一遍字好麻烦，以后还是直接放图片吧。</p>
 <h2 id="数学">数学</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4549448"><label class="task-list-item-label" for="task-item-4549448"> 1、看网课</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4976899"><label class="task-list-item-label" for="task-item-4976899"> 2、刷练习题</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7290838"><label class="task-list-item-label" for="task-item-7290838"> 1、看网课</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4940468"><label class="task-list-item-label" for="task-item-4940468"> 2、刷练习题</label></li>
 </ul>
 <h2 id="英语">英语</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7064150"><label class="task-list-item-label" for="task-item-7064150"> 1、背单词</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5704652"><label class="task-list-item-label" for="task-item-5704652"> 2、阅读</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5486499"><label class="task-list-item-label" for="task-item-5486499"> 1、背单词</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6140894"><label class="task-list-item-label" for="task-item-6140894"> 2、阅读</label></li>
 </ul>
 <h2 id="作业实验任务">作业/实验任务</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8732888"><label class="task-list-item-label" for="task-item-8732888"> 1、完成前端界面（h5做好了，Android和小程序还没做好）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6273505"><label class="task-list-item-label" for="task-item-6273505"> 2、整理之前写的服务端程序</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9952161"><label class="task-list-item-label" for="task-item-9952161"> 1、完成前端界面（h5做好了，Android和小程序还没做好）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1954255"><label class="task-list-item-label" for="task-item-1954255"> 2、整理之前写的服务端程序</label></li>
 </ul>
 <h2 id="插入视频试一试">插入视频试一试：</h2>
 <p><amp-video controls width="960" height="540" src="https://www.bilibili.com/video/BV1bp411A7YT/" poster="https://i1.hdslb.com/bfs/archive/415ec1101f980be1e1b0546dec8e6232ff396fdf.jpg"> </amp-video></p>
